@@ -1,0 +1,126 @@
+@font-face {
+    font-family: onionFont;
+    src: url("images/OPTIEagle-Bold.otf");
+}
+
+body {
+    background: url(images/background.png) no-repeat center center fixed;
+    background-size: cover;
+    min-height:100vh;
+    position: relative;
+    margin: 0;
+  
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+#title {
+    font-family: onionFont;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 70px;
+}
+
+#onion {
+    width: 70px;
+    height: 80px;
+}
+
+#scraper {
+    width: 70px;
+    height: 80px;
+}
+
+.cardDisplay{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 15px;
+    border-color: rgb(104, 47, 71);
+    border-width: 1.5px
+}
+.card-title{
+    color: rgb(104, 47, 55);
+}
+.btn {
+    background-color: rgb(69, 47, 104);
+}
+
+.scrapeBtn{
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.modal-body{
+    text-align: center;
+}
+
+.notesBtn,
+.addNote {
+    background-color: rgb(2, 55, 129)
+}
+
+.removeBtn,
+.xBtn {
+    background-color: rgb(117, 2, 2)
+}
+.saved button{
+    display: none;
+}
+.noteDisplay{
+    text-align: left
+}
+
+.btnDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+#note {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+#notes{
+    margin-bottom: 0;
+    margin-right: 1ch;
+}
+
+.navbar {
+    background-color: bisque; 
+}
+.white {
+    color: white;
+    font-size: 25px;
+}
+.white:hover{
+    color: peru;
+    text-decoration: none;
+}
+#navOnion{
+    
+    width: 45px;
+    height: 45px;
+}
+
+.navbar-dark{
+    display: flex;
+    font-size: 12px;
+    color: rgb(204, 18, 18);
+    /* align-items: center; */
+    justify-content: center;
+    background-color: rgb(104, 47, 61); 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

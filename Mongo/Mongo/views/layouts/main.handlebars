@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Onion Scraper</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="images/onionFavicon.ico" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-light bg-faded">
+  <a class="white" href="http://localhost:4020/"><img id="navOnion" src="images/onionFavicon.png"></a>
+  {{#if back}}
+  <a href="http://localhost:4020/articles">
+    <button class="btn btn-dark">Back to All Articles</button>
+</a>
+  {{else}}
+  <a href="http://localhost:4020/saved">
+    <button class="btn btn-dark">See Your Saved Articles</button>
+</a>
+{{/if}}
+</nav>
+
+    {{{body}}}
+
+<nav class="navbar sticky-bottom navbar-dark bg-dark">
+    <div class="copyDiv">
+        <p>Copyright © 2018 Coder Boiz Inc.</p>
+    </div>
+</nav>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
